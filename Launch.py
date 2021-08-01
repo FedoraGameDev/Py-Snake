@@ -17,9 +17,9 @@ GameState.init(int(GAME_WIDTH / 2), int(GAME_HEIGHT / 2), GAME_WIDTH, GAME_HEIGH
 pygame.display.set_caption("Snake")
 
 clock = pygame.time.Clock()
-gameRunning = True
 
 def Launch():
+    gameRunning = True
     while gameRunning:
         clock.tick(60)
 

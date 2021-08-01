@@ -78,8 +78,8 @@ class GameState:
     
     @classmethod
     def CheckPlayerCollisions(cls):
-        boundsCheckX = cls.playerX < 0 or cls.playerX > cls.maxX
-        boundsCheckY = cls.playerY < 0 or cls.playerY > cls.maxY
+        boundsCheckX = cls.playerX < 0 or cls.playerX >= cls.maxX
+        boundsCheckY = cls.playerY < 0 or cls.playerY >= cls.maxY
         if boundsCheckX or boundsCheckY:
             raise GameLoseException()
     
